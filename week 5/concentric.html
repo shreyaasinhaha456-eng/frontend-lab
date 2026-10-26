@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            background-color:red;
+        }
+        .combinator p{
+            background-color: yellow;
+        }
+        div > p {
+                color: blue;
+        }
+        div p.specialp{
+            border: 10px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum, dolor </p>
+    </div>
+    
+        <p>Lorem ipsum </p>
+    
+    <div>
+        <p>Lorem ipsum dolor sit </p>
+    </div>
+    <section class="combinator">
+        <p >Lorem ipsum dolor sit amet </p>
+    </section>
+    <div>
+        <section>
+            <p class="specialp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores, consequuntur quidem modi ea distinctio illum explicabo eius, dolores natus consectetur odit reiciendis. Ipsam modi facilis dolor ipsum voluptates doloremque.</p>
+        </section>
+    </div>
+    <section class="combination">
+        <p>Lorem ipsum dolor sit amet </p>
+    </section>
+    </div>
+</body>
+</html>

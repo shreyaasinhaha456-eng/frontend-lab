@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            animation: disco 5s ease-in-out 1s infinite;
+        }
+        @keyframes disco {
+            25%{
+               /* background-color: blueviolet;*/
+               /*transform: translateX(50px);*/
+               transform: translateX(500px) translateY(500px);
+
+            }
+            50%{
+                /*background-color: blue;*/
+                 /*transform: translateX(100px);*/
+                 transform: scale(1.5);
+            }
+            75%{
+               /* background-color: yellow;*/
+                /*transform: translateX(50px);*/
+                transform: rotateX(90deg);
+            }
+            100%{
+                /*background-color: green;*/
+                 /*transform: translateX(0px);*/
+            }
+                
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
